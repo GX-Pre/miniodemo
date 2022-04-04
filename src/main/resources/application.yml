@@ -1,0 +1,15 @@
+spring:
+  # 配合minio加大内存限制
+  servlet:
+    multipart:
+      max-file-size: 5120MB
+      max-request-size: 5120MB
+  # minio对象存储服务配置
+  minio:
+    url: http://192.168.159.133:9001
+    access-key: minioadmin
+    secret-key: minioadmin
+    bucket: bucket20220404
+
+server:
+  port: 8030
